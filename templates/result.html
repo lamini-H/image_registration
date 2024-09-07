@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Result</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Registration Result</h2>
+        <div class="alert alert-success" role="alert">
+            Dice Coefficient: {{ dice }}
+        </div>
+        <h4>Before Registration:</h4>
+        <img src="{{url_for('static',filename='Static_and_Moving.png')}}" class="img-fluid" alt="static and moving image">
+        <h4>After Registration:</h4>
+        <img src="{{url_for('static',filename='Transformed_result.png')}}" class="img-fluid" alt="Registration Result">
+        <!-- <h4>Side-by-Side Comparison:</h4>
+        <img src="{{ url_for('static', filename='side_by_side.png') }}" class="img-fluid" alt="Side-by-Side Comparison"> -->
+    </div>
+</body>
+</html>
